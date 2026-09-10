@@ -53,8 +53,9 @@ npm run tauri dev
 ## Project Status
 PomoTracker is currently a personal project and proof of concept. It was designed for a single user and is not ready for public distribution or production use.
 Current limitations include:
-- Remote synchronization features commented out for public version
+- Remote synchronization features disabled for public version
 - API credentials are configured locally for personal development
+- Todo-list feature not functional without Todoist API
 - No complete user authentication or authorization flow
 - Synchronization has not been designed or tested for concurrent users
 - Setup currently requires manual configuration
