@@ -1,0 +1,1 @@
+The src directory contains the React frontend, including the user interface, application state, productivity visualizations, and Todoist-related components.
