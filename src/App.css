@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-pomored-ring: hsl(0 48% 65.5%);
+  --color-pomored-button: hsl(0 48% 60.5%);
+  --color-pomored-darkRing: hsl(0, 76.00%, 65.00%);
+  --color-pomored-text: hsl(0, 35.00%, 50.00%);
+  --color-pomored-bg: hsl(0, 85.00%, 95.00%);
+  --color-pomored-nav: hsl(0, 60%, 60%);
+
+  --color-pomogreen-ring: hsl(123 27.2% 65.6%);
+  --color-pomogreen-button: hsl(123 30.2% 55.6%);
+  --color-pomogreen-darkRing: hsl(125, 70.00%, 70.00%);
+  --color-pomogreen-text: hsl(123, 35.00%, 50.00%);
+  --color-pomogreen-bg: hsl(125, 55%, 96%);
+  --color-pomogreen-nav: hsl(125, 60%, 42%);
+  --color-pomogreen-inactive: hsl(125, 80%, 80%);
+
+  --color-pomorange-ring: hsl(35 55.1% 68.3%);
+  --color-pomorange-button: hsl(35 62.1% 59.3%);
+  --color-pomorange-text: hsl(35, 35.00%, 50.00%);
+  --color-pomorange-darkRing: hsl(41, 80.00%, 60.00%);
+  --color-pomorange-bg: hsl(41, 95%, 97%);
+  --color-pomorange-nav: hsl(41, 60%, 50%);
+
+  --color-activetask: theme('colors.green.100');
+  --color-taskborder: theme('colors.neutral.200');
+
+  --color-background: theme('colors.neutral.200');
+  --color-surface: theme('colors.white');
+  --color-surface-hover: theme('colors.zinc.50');
+
+  --color-surface-container-lowest: theme('colors.white');
+  --color-surface-container-low: theme('colors.zinc.50');
+  --color-surface-container: theme('colors.zinc.100');
+  --color-surface-container-high: theme('colors.white');
+  --color-surface-container-highest: theme('colors.white');
+
+  --color-on-surface: theme('colors.black');
+  --color-on-surface-variant: theme('colors.zinc.500');
+  --color-component: theme('colors.white');
+  --color-component-hover: theme('colors.zinc.200');
+  --color-component-disabled: theme('colors.white');
+  --color-navbar: theme('colors.white');
+  --color-input: theme('colors.zinc.200');
+
+  --font-timer: 'Inter', sans-serif;
+  --phase: 400ms;
+}
+
+.dark {
+  --color-pomogreen-bg: theme('colors.neutral.950');
+  /* zinc-800 */
+  --color-pomored-bg: theme('colors.neutral.950');
+  --color-pomorange-bg: theme('colors.neutral.950');
+
+  --color-pomored-ring: hsl(0, 76.00%, 62.00%);
+  --color-pomogreen-ring: hsl(125, 70.00%, 65.00%);
+  --color-pomorange-ring: hsl(41, 83.00%, 60.00%);
+
+  --color-surface: theme('colors.neutral.900');
+  --color-component: theme('colors.neutral.800');
+  --color-component-hover: theme('colors.neutral.600');
+  --color-navbar: theme('colors.neutral.900');
+  --color-input: theme('colors.neutral.900');
+
+  --color-activetask: theme('colors.emerald.900');
+  --color-taskborder: theme('colors.neutral.700');
+}
+
+
+.work,
+.work .custom-tabs .nav-link.active {
+  background-color: rgb(255, 220, 220);
+  /* @apply bg-green-300; */
+  @apply bg-pomogreen-bg;
+}
+
+.shortbreak,
+.shortbreak .custom-tabs .nav-link.active {
+  /* background-color: rgb(255, 123, 123); */
+  @apply bg-pomored-bg;
+}
+
+.longbreak,
+.longbreak .custom-tabs .nav-link.active {
+  /* background-color: rgb(255, 213, 123); */
+  @apply bg-pomorange-bg;
+}
+
+.custom-tabs .nav-link {
+  color: #007bff;
+  /* Default text color */
+}
+
+.custom-tabs .nav-link {
+  /* color: #007bff;*/
+  background-color: #ffffff;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  color: inherit !important;
+  transition: none !important;
+  border-color: transparent !important;
+  filter: brightness(96%) saturate(100%);
+}
+
+.nav-link.active {
+  filter: brightness(90%) saturate(100%);
+}
+
+.row input {
+  width: 20%;
+  text-align: center;
+}
+
+.heatmap-container {
+  display: block;
+  position: relative;
+  top: -12vh;
+  width: 100%;
+}
+
+.heatmap-background {
+  background-color: #fafafa;
+  padding: 25px 20px 10px;
+  border-radius: 8px;
+}
+
+#cal-heatmap {
+  display: block;
+}
+
+:root {
+  touch-action: pan-x pan-y;
+  height: 100%
+}

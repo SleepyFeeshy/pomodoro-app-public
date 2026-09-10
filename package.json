@@ -1,0 +1,53 @@
+{
+  "name": "pomodoro-app-public",
+  "private": true,
+  "version": "0.4.15",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@choochmeque/tauri-plugin-google-auth-api": "^0.5.1",
+    "@supabase/supabase-js": "^2.49.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-notification": "^2.2.2",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-os": "^2.3.2",
+    "@tauri-apps/plugin-sql": "^2.2.0",
+    "@tauri-apps/plugin-store": "^2.2.0",
+    "bootstrap": "^5.3.3",
+    "cal-heatmap": "^4.2.4",
+    "chart.js": "^4.5.0",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^4.1.0",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.7.0",
+    "react-spinners": "^0.15.0",
+    "tauri-plugin-store-api": "github:tauri-apps/tauri-plugin-store#v1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@tauri-apps/cli": "^2",
+    "@types/cal-heatmap": "^3.5.39",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^9.8.8",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.7.0",
+    "postcss": "^7.0.39",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.62.1",
+    "vite": "^6.0.3",
+    "vite-tsconfig-paths": "^6.1.1"
+  }
+}
