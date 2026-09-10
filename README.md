@@ -38,6 +38,9 @@ The app records completed focus sessions and transforms the collected data into 
 
 ### Installation
 1. Clone the repo
+```
+git clone https://github.com/SleepyFeeshy/pomodoro-app-public.git
+```
 2. Install NPM packages
 ```
 npm install
