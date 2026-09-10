@@ -1,0 +1,1 @@
+lib.rs serves as the main entry point for initializing the application: it registers plugins, manages shared application state, and exposes Rust commands to the React frontend through Tauri’s invocation handler. The commands directory organizes these callable Rust functions by feature, such as database operations, synchronization, and external-service integration.
